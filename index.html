@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Product - Comfort</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<div class="navbar">
+    <div class="nav-logo">
+        <img src="Assets/logo.png" alt="Logo">
+        <p>COMFORT BY HASSAN</p>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="/">Shop</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/sale">Sale</a></li>
+        <li><a href="/new">New Arrival</a></li>
+    </ul>
+    <div class="nav-login-cart">
+        <a href="/login"><button>Login</button></a>
+        <div class="cart-container">
+            <img src="Assets/cart_icon.png" alt="Cart"></a>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-left" id="product-images">
+        <!-- Images will be inserted here dynamically -->
+    </div>
+    <div class="featured-image">
+        <img id="featured-image" src="" alt="Featured Product Image">
+    </div>
+    <div class="product-right">
+        <h2 id="product-name"></h2>
+        <p id="product-description"></p>
+        <p id="product-price"></p>
+
+        <!-- Quantity Dropdown -->
+        <label for="quantity">Quantity:</label>
+        <select id="quantity" class="quantity-dropdown">
+            <option value="3">Pack of 3</option>
+            <option value="6">Pack of 6</option>
+            <option value="9">Pack of 9</option>
+        </select>
+
+        <!-- Add to Cart Button -->
+        <button id="add-to-cart" class="add-to-cart-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Sliding Notification -->
+<div id="notification" class="notification">
+    Item added to your cart!
+</div>
+
+<div id="cart-modal" class="cart-modal">
+    <h3>Your Cart</h3>
+    <div id="cart-items-container">
+        <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="cart-total">
+        <p>Total:</p>
+        <p id="cart-total-price">RS 0</p>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Comfort by Hassan. All rights reserved.</p>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
